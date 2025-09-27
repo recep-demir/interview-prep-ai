@@ -2,7 +2,15 @@ import React from 'react'
 
 const LandingPage = () => {
   return (
-    <div>LandingPage</div>
+    <div style={{ 
+      fontSize: '48px', 
+      color: 'red', 
+      background: 'yellow', 
+      padding: '50px',
+      textAlign: 'center'
+    }}>
+      🎯 LANDING PAGE ÇALIŞIYOR! 🎯
+    </div>
   )
 }
 
