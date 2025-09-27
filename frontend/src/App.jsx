@@ -14,7 +14,14 @@ import { UserProvider } from "./context/userContext";
 
 const App = () => {
   return (
-    <div className = 'text-5xl text-red-100'>App</div>
+    <UserProvider>
+      <div>
+        <Router>
+          
+        </Router>
+
+      </div>
+      </UserProvider>
   )
 }
 
