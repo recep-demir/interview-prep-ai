@@ -8,3 +8,14 @@
   --color-secondary: #06B6D4;
 }
 
+@layer base {
+  html {
+    font-family: var(--font-display);
+  }
+
+  body {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    overflow-x: hidden;
+  }
+}
+
