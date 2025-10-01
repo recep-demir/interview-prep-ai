@@ -4,9 +4,13 @@ import { useNavigate } from "react-router-dom";
 import { LuSparkles } from "react-icons/lu";
 
 const LandingPage = () => {
+  const navigate = useNavigate();
+
+  const [openAuthModal, setOpenAuthModal] = useState(false);
+  const [currentPage, setCurrentPage] = useState("login");
   return (
     <div >
-     LANDING PAGE works
+     Landing Page
     </div>
   )
 }
