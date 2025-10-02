@@ -8,10 +8,22 @@ const LandingPage = () => {
 
   const [openAuthModal, setOpenAuthModal] = useState(false);
   const [currentPage, setCurrentPage] = useState("login");
+
+    const handleCTA = () => {
+    if (!user) {
+      setOpenAuthModal(true);
+    } else {
+      navigate("/dashboard");
+    }
+  };
+  
   return (
-    <div >
-     Landing Page
-    </div>
+<>
+
+
+
+
+</>
   )
 }
 
