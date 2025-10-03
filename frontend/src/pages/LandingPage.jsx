@@ -20,7 +20,7 @@ const LandingPage = () => {
 
   const handleCTA = () => {
     if (!user) {
-      setOpenAuthModal(true);
+      setOpenAuthModal(true); 
     } else {
       navigate("/dashboard");
     }
@@ -140,7 +140,7 @@ const LandingPage = () => {
         </div>
 
         <div className="text-sm bg-gray-50 text-secondary text-center p-5 mt-5">
-          Made with ❤️... Happy Coding
+          Happy Coding
         </div>
       </div>
 
