@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+
+import HERO_IMG from "../assets/hero-img.png";
 import { APP_FEATURES } from "../utils/data";
 import { useNavigate } from "react-router-dom";
 import { LuSparkles } from "react-icons/lu";
@@ -7,7 +9,7 @@ import Login from "./Auth/Login";
 import SignUp from "./Auth/SignUp";
 import { useContext } from "react";
 import { UserContext } from "../context/userContext";
-import ProfileInfoCard from "../components/Cards/ProfileInfoCard.jsx";
+import ProfileInfoCard from "../components/Cards/ProfileInfoCard";
 
 const LandingPage = () => {
   const { user } = useContext(UserContext);
@@ -16,7 +18,7 @@ const LandingPage = () => {
   const [openAuthModal, setOpenAuthModal] = useState(false);
   const [currentPage, setCurrentPage] = useState("login");
 
-    const handleCTA = () => {
+  const handleCTA = () => {
     if (!user) {
       setOpenAuthModal(true);
     } else {
@@ -25,7 +27,7 @@ const LandingPage = () => {
   };
 
   return (
- <>
+    <>
       <div className="w-full min-h-full bg-[#FFFCEF]">
         <div className="w-[500px] h-[500px] bg-amber-200/20 blur-[65px] absolute top-0 left-0" />
 
