@@ -1,7 +1,7 @@
 import React from "react";
 
 const Modal = ({ children, isOpen, onClose, title, hideHeader }) => {
-  if (!isOpen) return null; // modal kapalıysa hiç render edilmez
+  if (!isOpen) return null; // If modal is not open, render nothing
 
   return (
     <div className="fixed inset-0 z-50 flex justify-center items-center w-full h-full bg-black/40">
