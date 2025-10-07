@@ -6,9 +6,14 @@ import axiosInstance from "../../utils/axiosInstance";
 import { API_PATHS } from "../../utils/apiPaths";
 import { UserContext } from "../../context/userContext";
 
-const [email, setEmail] = useState("");
-const [password, setPassword] = useState("");
-const [error, setError] = useState(null);
+const Login = ({ setCurrentPage }) => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState(null);
+
+  const { updateUser } = useContext(UserContext);
+
+  const navigate = useNavigate();
 
 const handleLogin = async (e) => {
   e.preventDefault();
@@ -25,4 +30,4 @@ const handleLogin = async (e) => {
 
   setError("");
 
-  
+  export default Login;
