@@ -7,11 +7,42 @@ const Input = ({ value, onChange, label, placeholder, type }) => {
   const toggleShowPassword = () => {
     setShowPassword(!showPassword);
   };
-  
-const Input = () => {
-  return (
-    <div>Input</div>
-  )
-}
 
-export default Input
+return (
+    <div>
+      <label className="text-[13px] text-slate-800">{label}</label>
+
+      <div className="input-box">
+        <input
+          type={
+            type === "password" ? (showPassword ? "text" : "password") : type
+          }
+          placeholder={placeholder}
+          className="w-full bg-transparent outline-none"
+          value={value}
+          onChange={(e) => onChange(e)}
+        />
+
+        {type === "password" && (
+          <>
+            {showPassword ? (
+              <FaRegEye
+                size={22}
+                className="text-primary cursor-pointer"
+                onClick={toggleShowPassword}
+              />
+            ) : (
+              <FaRegEyeSlash
+                size={22}
+                className="text-slate-400 cursor-pointer"
+                onClick={toggleShowPassword}
+              />
+            )}
+          </>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default Input;
