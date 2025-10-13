@@ -32,3 +32,5 @@ return (
     </div>
   )
 );
+
+export default ProfileInfoCard;
