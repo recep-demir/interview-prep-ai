@@ -10,6 +10,11 @@ const QuestionCard = ({
   isPinned,
   onTogglePin,
 }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [height, setHeight] = useState(0);
+  const contentRef = useRef(null);
+
+  
   return (
     <div>QuestionCard</div>
   )
