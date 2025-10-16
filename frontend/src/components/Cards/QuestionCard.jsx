@@ -3,7 +3,13 @@ import { LuChevronDown, LuPin, LuPinOff, LuSparkles } from "react-icons/lu";
 import AIResponsePreview from "../../pages/InterviewPrep/components/AIResponsePreview";
 
 
-const QuestionCard = () => {
+const QuestionCard = ({
+  question,
+  answer,
+  onLearnMore,
+  isPinned,
+  onTogglePin,
+}) => {
   return (
     <div>QuestionCard</div>
   )
