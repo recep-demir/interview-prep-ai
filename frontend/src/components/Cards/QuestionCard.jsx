@@ -14,6 +14,12 @@ const QuestionCard = ({
   const [height, setHeight] = useState(0);
   const contentRef = useRef(null);
 
+  const toggleExpand = () => {
+    setIsExpanded(!isExpanded);
+  };
+
+
+
   useEffect(() => {
     if (isExpanded) {
       const contentHeight = contentRef.current.scrollHeight;
@@ -22,6 +28,8 @@ const QuestionCard = ({
       setHeight(0);
     }
   }, [isExpanded]);
+
+
   return (
     <div>QuestionCard</div>
   )
