@@ -1,6 +1,13 @@
-import React from 'react'
+import React from "react";
 
-const RoleInfoHeader = () => {
+const RoleInfoHeader = ({
+  role,
+  topicsToFocus,
+  experience,
+  questions,
+  description,
+  lastUpdated,
+}) => {
   return (
     <div>RoleInfoHeader</div>
   )
