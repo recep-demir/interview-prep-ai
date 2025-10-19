@@ -1,13 +1,13 @@
 import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 
-import HERO_IMG from "../assets/hero-img.png";
+import HERO_IMG from "../assets/ChatGPT Image.png";
 import { APP_FEATURES } from "../utils/data";
 import { LuSparkles } from "react-icons/lu";
 import Modal from "../components/Modal";
 import Login from "./Auth/Login";
 import SignUp from "./Auth/SignUp";
-import { UserContext } from "../context/UserContext";
+import { UserContext } from "../context/userContext";
 import ProfileInfoCard from "../components/Cards/ProfileInfoCard";
 
 const LandingPage = () => {
@@ -30,7 +30,7 @@ const LandingPage = () => {
       <div className="w-full min-h-full bg-[#FFFCEF]">
         <div className="w-[500px] h-[500px] bg-amber-200/20 blur-[65px] absolute top-0 left-0" />
 
-        <div className="container mx-auto px-4 pt-6 pb-[200px] relative z-10">
+        <div className="container mx-auto px-4 pt-6 pb-[50px] relative z-10">
           {/* Header */}
           <header className="flex justify-between items-center mb-16">
             <div className="text-xl text-black font-bold">
@@ -87,7 +87,7 @@ const LandingPage = () => {
 
       <div className="w-full min-h-full relative z-10">
         <div>
-          <section className="flex items-center justify-center -mt-36">
+          <section className="flex items-center justify-center -mt-10">
             <img
               src={HERO_IMG}
               alt="Hero Image"
@@ -96,7 +96,7 @@ const LandingPage = () => {
           </section>
         </div>
 
-        <div className="w-full min-h-full bg-[#FFFCEF] mt-10">
+        <div className="w-full min-h-full bg-[#FFFCEF] mt-0">
           <div className="container mx-auto px-4 pt-10 pb-20">
             <section className="mt-5">
               <h2 className="text-2xl font-medium text-center mb-12">
@@ -138,9 +138,9 @@ const LandingPage = () => {
           </div>
         </div>
 
-        <div className="text-sm bg-gray-50 text-secondary text-center p-5 mt-5">
+        {/* <div className="text-sm bg-gray-50 text-secondary text-center p-5 mt-5">
           Made with ❤️... Happy Coding
-        </div>
+        </div> */}
       </div>
 
       {/* Auth Modal */}
