@@ -20,7 +20,10 @@ app.use(express.json());
 // 🔹 MongoDB bağlantısı
 connectDB();
 
-
+// 🔹 Test route (şimdilik)
+app.get("/", (req, res) => {
+  res.send("🚀 Backend çalışıyor!");
+});
 
 // 🔹 Sunucuyu başlat
 const PORT = process.env.PORT || 5000;
