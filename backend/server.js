@@ -14,6 +14,9 @@ app.use(
   })
 );
 
+// 🔹 JSON verilerini parse et
+app.use(express.json());
+
 
 
 // 🔹 Sunucuyu başlat
