@@ -20,5 +20,10 @@ export const API_PATHS = {
     GET_ONE: (id) => `/api/sessions/${id}`, // Get session details with questions
     DELETE: (id) => `/api/sessions/${id}`, // Delete a session
   },
+    QUESTION: {
+    ADD_TO_SESSION: "/api/questions/add", // Add more questions to a session
+    PIN: (id) => `/api/questions/${id}/pin`, // Pin or Unpin a question
+    UPDATE_NOTE: (id) => `/api/questions/${id}/note`, // Update/Add a note to a question
+  },
 
 }
