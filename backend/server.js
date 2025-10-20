@@ -17,6 +17,9 @@ app.use(
 // 🔹 JSON verilerini parse et
 app.use(express.json());
 
+// 🔹 MongoDB bağlantısı
+connectDB();
+
 
 
 // 🔹 Sunucuyu başlat
