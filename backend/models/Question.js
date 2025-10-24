@@ -4,11 +4,15 @@ const questionSchema = new mongoose.Schema(
   {
     session: { 
         type: mongoose.Schema.Types.ObjectId, 
-        ref: "Session" },
+        ref: "Session" 
+    },
     question: String,
     answer: String,
     note: String,
-    isPinned: { type: Boolean, default: false },
+    isPinned: { 
+        type: Boolean, 
+        default: false 
+    },
   },
   { timestamps: true }
 );
