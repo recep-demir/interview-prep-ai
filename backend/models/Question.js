@@ -2,7 +2,9 @@ const mongoose = require("mongoose");
 
 const questionSchema = new mongoose.Schema(
   {
-    session: { type: mongoose.Schema.Types.ObjectId, ref: "Session" },
+    session: { 
+        type: mongoose.Schema.Types.ObjectId, 
+        ref: "Session" },
     question: String,
     answer: String,
     note: String,
