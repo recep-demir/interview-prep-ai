@@ -20,7 +20,7 @@ connectDB();
 
 
 app.get("/", (req, res) => {
-  res.send("🚀 Backend çalışıyor!");
+  res.send("Backend çalışıyor!");
 });
 
 
