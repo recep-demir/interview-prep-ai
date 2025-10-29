@@ -12,7 +12,7 @@ import { API_PATHS } from "../../utils/apiPaths";
 import QuestionCard from "../../components/Cards/QuestionCard";
 import Drawer from "../../components/Drawer";
 import SkeletonLoader from "../../components/loader/SkeletonLoader";
-import AIResponsePreview from "./components/AIResponsePreview";
+import AIResponsePreview from "./components/AiResponsePreview";
 
 const InterviewPrep = () => {
   const { sessionId } = useParams(); 
