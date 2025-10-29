@@ -85,19 +85,19 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <div className="w-full min-h-full relative z-10">
+      <div className="w-full min-h-full relative z-0">
         <div>
-          <section className="flex items-center justify-center -mt-10">
+          <section className="flex items-center justify-center -mt-40">
             <img
               src={HERO_IMG}
               alt="Hero Image"
-              className="w-[80vw] rounded-lg"
+              className="w-full max-w-none rounded-none"
             />
           </section>
         </div>
 
         <div className="w-full min-h-full bg-[#FFFCEF] mt-0">
-          <div className="container mx-auto px-4 pt-10 pb-20">
+          <div className="container mx-auto px-4 pt-1 pb-20">
             <section className="mt-5">
               <h2 className="text-2xl font-medium text-center mb-12">
                 Features That Make You Shine
