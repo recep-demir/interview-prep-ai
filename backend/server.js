@@ -37,7 +37,7 @@ app.use("/api/ai/generate-explanation", protect, generateConceptExplanation);
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 app.get("/", (req, res) => {
-  res.send("🚀 Backend çalışıyor ve tüm route’lar aktif!");
+  res.send("The backend is up and running, and all routes are active!");
 });
 
 const PORT = process.env.PORT || 5000;
