@@ -15,7 +15,7 @@ import SkeletonLoader from "../../components/Loader/SkeletonLoader";
 import AIResponsePreview from "./components/AIResponsePreview";
 
 const InterviewPrep = () => {
-  const { sessionId } = useParams(); // URL'den oturum ID'sini alır
+  const { sessionId } = useParams(); 
 
   const [sessionData, setSessionData] = useState(null);
   const [errorMsg, setErrorMsg] = useState("");
@@ -25,7 +25,6 @@ const InterviewPrep = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [isUpdateLoader, setIsUpdateLoader] = useState(false);
 
-  // 1️⃣ Oturum verisini getir
   const fetchSessionDetailsById = async () => {
     try {
       const response = await axiosInstance.get(
@@ -63,7 +62,7 @@ const InterviewPrep = () => {
     }
   };
 
-  // 3️⃣ Soruyu pinle veya pin kaldır
+
   const toggleQuestionPinStatus = async (questionId) => {
     try {
       const response = await axiosInstance.post(
@@ -77,7 +76,7 @@ const InterviewPrep = () => {
     }
   };
 
-  // 4️⃣ Yeni soru ekleme (Load More)
+
   const uploadMoreQuestions = async () => {
     try {
       setIsUpdateLoader(true);
@@ -118,7 +117,7 @@ const InterviewPrep = () => {
 
   return (
     <DashboardLayout>
-      {/* Üstte oturum bilgisi */}
+
       <RoleInfoHeader
         role={sessionData?.role || ""}
         topicsToFocus={sessionData?.topicsToFocus || ""}
@@ -168,7 +167,6 @@ const InterviewPrep = () => {
                     onTogglePin={() => toggleQuestionPinStatus(data._id)}
                   />
 
-                  {/* Listenin sonundaki Load More butonu */}
                   {!isLoading &&
                     sessionData?.questions?.length === index + 1 && (
                       <div className="flex items-center justify-center mt-5">
@@ -192,7 +190,6 @@ const InterviewPrep = () => {
           </div>
         </div>
 
-        {/* Sağ tarafta "Learn More" açıklama paneli */}
         <Drawer
           isOpen={openLeanMoreDrawer}
           onClose={() => setOpenLeanMoreDrawer(false)}
