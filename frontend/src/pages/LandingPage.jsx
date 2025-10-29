@@ -7,7 +7,7 @@ import { LuSparkles } from "react-icons/lu";
 import Modal from "../components/Modal";
 import Login from "./Auth/Login";
 import SignUp from "./Auth/SignUp";
-import { UserContext } from "../context/userContext";
+import { UserContext } from "../context/UserContext";
 import ProfileInfoCard from "../components/Cards/ProfileInfoCard";
 
 const LandingPage = () => {
