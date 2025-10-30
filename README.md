@@ -5,30 +5,28 @@ It generates role-specific questions, detailed answers, and concept explanations
 
 ---
 
-## 🌟 Features
-- 🔐 User Authentication (Register / Login with JWT)
-- 🧠 AI-generated Interview Questions (Gemini)
-- 🗂️ Organize and Save Multiple Interview Sessions
-- 📌 Pin or Add Notes to Important Questions
-- 🖼️ Upload Profile Picture
-- ⚙️ Built with **MERN Stack** (MongoDB, Express, React, Node.js)
+## Features
+- User Authentication (Register / Login with JWT)
+- AI-generated Interview Questions (Gemini)
+- Organize and Save Multiple Interview Sessions
+- Pin or Add Notes to Important Questions
+- Upload Profile Picture
+- Built with **MERN Stack** (MongoDB, Express, React, Node.js)
 
 ---
 
-## 🖼️ Screenshots
+## Screenshots
 
-### 🏠 Landing Page
-![Landing Page](./screenshots/landing.png)
+### Landing Page
+![Landing Page](./frontend/public/image1.png)
 
-### 📋 Dashboard
-![Dashboard](./screenshots/dashboard.png)
-
-> (Add your screenshots into a `screenshots` folder in the project root)
+### Dashboard
+![Dashboard](./frontend/public/image.png)
 
 ---
 
 ## 🔗 Live Demo
-👉 [Visit Live App]([https://your-deployment-link.com](https://interview-prep-app.netlify.app/))
+[Visit Live App]([https://your-deployment-link.com](https://interview-prep-app.netlify.app/))
 
 ---
 
@@ -131,21 +129,21 @@ interview-prep-ai/
 
 ---
 
-## 🧩 Setup Instructions
+## Setup Instructions
 
-### 1️⃣ Clone Repository
+### 1 Clone Repository
 ```bash
 git clone https://github.com/yourusername/interview-prep-ai.git
 cd interview-prep-ai
 ```
 
-### 2️⃣ Install Backend
+### 2 Install Backend
 ```bash
 cd backend
 npm install
 ```
 
-### 3️⃣ Create `.env` File
+### 3 Create `.env` File
 ```bash
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
@@ -153,7 +151,7 @@ JWT_SECRET=your_secret_key
 GEMINI_API_KEY=your_gemini_api_key
 ```
 
-### 4️⃣ Start Backend
+### 4 Start Backend
 ```bash
 npm run dev
 ```
@@ -161,7 +159,7 @@ npm run dev
 Server will run on:  
 👉 `http://localhost:5000`
 
-### 5️⃣ Install Frontend
+### 5 Install Frontend
 ```bash
 cd ../frontend
 npm install
@@ -173,7 +171,7 @@ Frontend will run on:
 
 ---
 
-## 📸 API Endpoints (Quick Overview)
+## API Endpoints (Quick Overview)
 
 | Method | Endpoint | Description |
 |--------|-----------|-------------|
@@ -186,7 +184,7 @@ Frontend will run on:
 
 ---
 
-## 🧠 Example: Generate Questions (Gemini)
+## Example: Generate Questions (Gemini)
 ```json
 POST /api/ai/generate-questions
 {
@@ -209,17 +207,16 @@ Response:
 
 ---
 
-## 🧑‍💻 Author
+## Author
 **Recep Demir**  
-📧 demir.rp@gmail.com  
-🇹🇷 Passionate about Full-Stack Development & AI.
+demir.rp@gmail.com  
 
 ---
 
-## 🫶 Credits
+## Credits
 - Google Gemini AI  
 - Clarusway Full Stack Development Program  
 
 ---
 
-### 🪄 “Prepare Smart. Practice with AI.”
+### “Prepare Smart. Practice with AI.”
