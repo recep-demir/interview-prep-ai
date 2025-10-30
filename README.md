@@ -1,4 +1,4 @@
-# 💼 Interview Prep AI App
+# Interview Prep AI App
 
 An AI-powered web application that helps you **prepare for technical interviews**.  
 It generates role-specific questions, detailed answers, and concept explanations using **Google Gemini AI**.
@@ -28,7 +28,7 @@ It generates role-specific questions, detailed answers, and concept explanations
 ---
 
 ## 🔗 Live Demo
-👉 [Visit Live App](https://your-deployment-link.com)
+👉 [Visit Live App]([https://your-deployment-link.com](https://interview-prep-app.netlify.app/))
 
 ---
 
