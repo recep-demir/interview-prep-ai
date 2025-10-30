@@ -9,7 +9,7 @@ const generateInterviewQuestions = async (req, res) => {
     if (!role || !experience || !topicsToFocus || !numberOfQuestions)
       return res.status(400).json({ message: "Missing required fields" });
 
-    const prompt = questionAnswerPrompt(role, experience, topicsToFocus, numberOfQuestions);
+    const prompt = questionAnswerPrompt(role, experience, topicsToFocus, numberOfQuestions,description);
 
     const response = await ai.models.generateContent({
       model: "gemini-2.0-flash-lite",
