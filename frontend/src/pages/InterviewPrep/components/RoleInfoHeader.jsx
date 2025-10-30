@@ -12,7 +12,6 @@ const RoleInfoHeader = ({
     <div className="bg-white relative">
       <div className="container mx-auto px-10 md:px-0">
         <div className="h-[200px] flex flex-col justify-center relative z-10">
-          {/* Role and topics */}
           <div className="flex items-start">
             <div className="flex-grow">
               <div className="flex justify-between items-start">
@@ -26,7 +25,6 @@ const RoleInfoHeader = ({
             </div>
           </div>
 
-          {/* Info badges */}
           <div className="flex items-center gap-3 mt-4">
             <div className="text-[10px] font-semibold text-white bg-black px-3 py-1 rounded-full">
               Experience: {experience} {experience == 1 ? "Year" : "Years"}
@@ -42,7 +40,6 @@ const RoleInfoHeader = ({
           </div>
         </div>
 
-        {/* Animated background shapes */}
         <div className="w-[40vw] md:w-[30vw] h-[200px] flex items-center justify-center bg-white overflow-hidden absolute top-0 right-0">
           <div className="w-16 h-16 bg-lime-400 blur-[65px] animate-blob1" />
           <div className="w-16 h-16 bg-teal-400 blur-[65px] animate-blob2" />
