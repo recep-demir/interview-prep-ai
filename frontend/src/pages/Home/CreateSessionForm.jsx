@@ -41,7 +41,6 @@ const CreateSessionForm = () => {
     setIsLoading(true);
 
     try {
-      // 1️⃣ AI'dan soru üret
       const aiResponse = await axiosInstance.post(
         API_PATHS.AI.GENERATE_QUESTIONS,
         {
@@ -54,7 +53,7 @@ const CreateSessionForm = () => {
 
       const generatedQuestions = aiResponse.data;
 
-      // 2️⃣ Yeni session kaydet
+
       const response = await axiosInstance.post(API_PATHS.SESSION.CREATE, {
         ...formData,
         questions: generatedQuestions,
