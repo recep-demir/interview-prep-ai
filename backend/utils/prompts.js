@@ -6,7 +6,6 @@ Task:
 - Candidate Experience: ${experience} years
 - Focus Topics: ${topicsToFocus}
 - Write ${numberOfQuestions} interview questions.
-- Additional Context: ${description}
 - For each question, generate a detailed but beginner-friendly answer.
 - If the answer needs a code example, add a small code block inside.
 - Keep formatting very clean.
