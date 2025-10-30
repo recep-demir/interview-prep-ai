@@ -23,7 +23,6 @@ const Dashboard = () => {
     data: null,
   });
 
-  // Get all sessions from backend
   const fetchAllSessions = async () => {
     try {
       const response = await axiosInstance.get(API_PATHS.SESSION.GET_ALL);
@@ -33,7 +32,6 @@ const Dashboard = () => {
     }
   };
 
-  // Delete a session
   const deleteSession = async (sessionData) => {
     try {
       await axiosInstance.delete(API_PATHS.SESSION.DELETE(sessionData?._id));
@@ -52,7 +50,6 @@ const Dashboard = () => {
   return (
     <DashboardLayout>
       <div className="container mx-auto pt-4 pb-4">
-        {/* Sessions list */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-7 pt-1 pb-6 px-4 md:px-0">
           {sessions?.map((data, index) => (
             <SummaryCard
@@ -74,7 +71,6 @@ const Dashboard = () => {
           ))}
         </div>
 
-        {/* Add New Button */}
         <button
           className="h-12 flex items-center justify-center gap-3 bg-linear-to-r from-[#FF9324] to-[#e99a4b] text-sm font-semibold text-white px-7 py-2.5 rounded-full hover:bg-black hover:text-white transition-colors cursor-pointer hover:shadow-2xl hover:shadow-orange-300 fixed bottom-10 md:bottom-20 right-10 md:right-20"
           onClick={() => setOpenCreateModal(true)}
@@ -84,7 +80,6 @@ const Dashboard = () => {
         </button>
       </div>
 
-      {/* Modal for Create Session */}
       <Modal
         isOpen={openCreateModal}
         onClose={() => setOpenCreateModal(false)}
@@ -95,7 +90,6 @@ const Dashboard = () => {
         </div>
       </Modal>
 
-      {/* Modal for Delete Confirmation */}
       <Modal
         isOpen={openDeleteAlert?.open}
         onClose={() => setOpenDeleteAlert({ open: false, data: null })}
