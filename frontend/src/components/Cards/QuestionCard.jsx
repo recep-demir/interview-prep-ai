@@ -13,7 +13,6 @@ const QuestionCard = ({
   const [height, setHeight] = useState(0);
   const contentRef = useRef(null);
 
-  // Kart açıldığında cevabın yüksekliğini hesapla
   useEffect(() => {
     if (isExpanded) {
       const contentHeight = contentRef.current.scrollHeight;
@@ -31,7 +30,6 @@ const QuestionCard = ({
     <>
       <div className="bg-white rounded-lg mb-4 overflow-hidden py-4 px-5 shadow-xl shadow-gray-100/70 border border-gray-100/60 group">
         <div className="flex items-start justify-between cursor-pointer">
-          {/* Soru başlığı */}
           <div className="flex items-start gap-3.5">
             <span className="text-xs md:text-[15px] font-semibold text-gray-400 leading-[18px]">
               Q
@@ -45,14 +43,12 @@ const QuestionCard = ({
             </h3>
           </div>
 
-          {/* Sağ taraf (butonlar) */}
           <div className="flex items-center justify-end ml-4 relative">
             <div
               className={`flex ${
                 isExpanded ? "md:flex" : "md:hidden group-hover:flex"
               }`}
             >
-              {/* Pin butonu */}
               <button
                 className="flex items-center gap-2 text-xs text-indigo-800 font-medium bg-indigo-50 px-3 py-1 mr-2 rounded border border-indigo-50 hover:border-indigo-200 cursor-pointer"
                 onClick={onTogglePin}
@@ -77,7 +73,6 @@ const QuestionCard = ({
               </button>
             </div>
 
-            {/* Aç / Kapat butonu (ok simgesi) */}
             <button
               className="text-gray-400 hover:text-gray-500 cursor-pointer"
               onClick={toggleExpand}
@@ -92,7 +87,6 @@ const QuestionCard = ({
           </div>
         </div>
 
-        {/* Cevap kısmı (açılır kapanır) */}
         <div
           className="overflow-hidden transition-all duration-300 ease-in-out"
           style={{ maxHeight: `${height}px` }}
