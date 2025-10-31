@@ -15,6 +15,11 @@ It generates role-specific questions, detailed answers, and concept explanations
 
 ---
 
+## 🔗 Live Demo
+[Visit Live App]([https://your-deployment-link.com](https://interview-prep-app.netlify.app/))
+
+---
+
 ## Screenshots
 
 ### Landing Page
@@ -22,11 +27,6 @@ It generates role-specific questions, detailed answers, and concept explanations
 
 ### Dashboard
 ![Dashboard](./frontend/public/image.png)
-
----
-
-## 🔗 Live Demo
-[Visit Live App]([https://your-deployment-link.com](https://interview-prep-app.netlify.app/))
 
 ---
 
@@ -133,7 +133,7 @@ interview-prep-ai/
 
 ### 1 Clone Repository
 ```bash
-git clone https://github.com/yourusername/interview-prep-ai.git
+git clone https://github.com/recep-demir/interview-prep-ai.git
 cd interview-prep-ai
 ```
 
