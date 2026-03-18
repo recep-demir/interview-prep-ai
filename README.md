@@ -16,7 +16,7 @@ It generates role-specific questions, detailed answers, and concept explanations
 ---
 
 ## 🔗 Live Demo
-[Visit Live App]([https://your-deployment-link.com](https://interview-prep-app.netlify.app/))
+[Visit Live App](https://interview-prep-app.netlify.app/)
 
 ---
 
